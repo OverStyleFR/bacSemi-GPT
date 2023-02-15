@@ -10,6 +10,7 @@ while True:
     if choix == 1:
         print("1. Utiliser R = U x I")
         print("2. Utiliser R = P / I2")
+        print("3. Retour")
 
         sec_menu = int(input("Sélectionne quelle formule tu souhaites choisir : "))
 
@@ -62,6 +63,9 @@ while True:
                 print("\nRésulat :",a, "Ω\n")
             elif b == 3 :
                 print("\nRésulat :",a, "A\n")
+
+        elif sec_menu ==3 : 
+            continue
 
     elif choix == 2:
         print("Vous avez choisi la formule de la puissance (W)")
