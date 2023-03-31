@@ -9,7 +9,7 @@ while True:
 
     if choix == 1:
         print("1. Utiliser R = U x I")
-        print("2. Utiliser R = P / I2")
+        print("2. Utiliser P = I² / R")
         print("3. Retour")
 
         sec_menu = int(input("Sélectionne quelle formule tu souhaites choisir : "))
