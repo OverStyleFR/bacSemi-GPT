@@ -68,25 +68,25 @@ while True:
             continue
 
     elif choix == 2:
-        print("Vous avez choisi la formule de la puissance (W)")
+        print("Vous avez choisi la formule de la puissance (P = U x I)")
 
-        r=float(input("Donne la valeur R (Ω) : "))
+        p=float(input("Donne la valeur P (W) : "))
         u=float(input("Donne la valeur U (V) : "))
         i=float(input("Donne la valeur I (A) : "))
         a=None
 
-        if r == 0 :
-            a=u/i
+        if p == 0 :
+            a=u*i
             b=1
         elif u == 0 :
-            a=i*r
+            a=p/i
             b=2
         elif i == 0 :
-            a=u/r
+            a=p/u
             b=3
 
         if b == 1 :
-            print("\nRésulat :",a, "Ω\n")
+            print("\nRésulat :",a, "W\n")
         elif b == 2 :
             print("\nRésulat :",a, "V\n")
         elif b == 3 :
