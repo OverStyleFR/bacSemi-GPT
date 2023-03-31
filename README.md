@@ -8,10 +8,9 @@ Programme permettant de utiliser les formules de base
 
 ## Usage 
 
-Lancer le programme,
-puis après, une fois le menu affiché, vous pouvez naviguer dedans avec les touches de la calculatrice.
-Une fois la formule choisi ainsi que si *disponible la version de la formule*, entrez les valeurs que vous connaissez et la **valeur que vous _souhaitez_ savoir mettez "0".**
-Une fois ceci fait, ca va ***calculer automatiquement la valeur manquante.***
+* Lancer le programme,puis après, une fois le menu affiché, vous pouvez naviguer dedans avec les touches de la calculatrice.
+* Une fois la formule choisi ainsi que si *disponible la version de la formule*, entrez les valeurs que vous connaissez et la **valeur que vous _souhaitez_ savoir mettez "0".**
+* Une fois ceci fait, ca va ***calculer automatiquement la valeur manquante.***
 
 ## Installation
 
