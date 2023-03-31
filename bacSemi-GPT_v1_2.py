@@ -23,10 +23,10 @@ while True:
             a=None
 
             if r == 0 :
-                a=u*i
+                a=u/i
                 b=1
             elif u == 0 :
-                a=r/i
+                a=r*i
                 b=2
             elif i == 0 :
                 a=r/u
@@ -40,21 +40,21 @@ while True:
                 print("\nRésulat :",a, "A\n")
 
         elif sec_menu == 2:
-            print("Tu as choisi la formule avec I2 (R = P / I2)")
+            print("Tu as choisi la formule avec I2 (P = I² / R)")
 
-            i2=float(input("Donne la valeur I (A) : "))
+            i2=float(input("Donne la valeur I² (A) : "))
             r=float(input("Donne la valeur R (Ω) : "))
             p=float(input("Donne la valeur P (W) : "))
             a=None
 
             if p == 0 :
-                a=r*i2
+                a=r/i2
                 b=1
             elif r == 0 :
                 a=p/i2
                 b=2
             elif i2 == 0 :
-                a=p/r
+                a=p*r
                 b=3
 
             if b == 1 :
