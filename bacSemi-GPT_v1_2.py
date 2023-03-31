@@ -9,7 +9,7 @@ while True:
 
     if choix == 1:
         print("1. Utiliser R = U x I")
-        print("2. Utiliser P = I² / R")
+        print("2. Utiliser R = P / I²")
         print("3. Retour")
 
         sec_menu = int(input("Sélectionne quelle formule tu souhaites choisir : "))
@@ -68,30 +68,64 @@ while True:
             continue
 
     elif choix == 2:
-        print("Vous avez choisi la formule de la puissance (P = U x I)")
+        print("1. Utiliser P = U x I")
+        print("2. Utiliser P = I² / R")
+        print("3. Retour")
 
-        p=float(input("Donne la valeur P (W) : "))
-        u=float(input("Donne la valeur U (V) : "))
-        i=float(input("Donne la valeur I (A) : "))
-        a=None
+        sec_menu = int(input("\nSélectionne quelle formule tu souhaites choisir : "))
 
-        if p == 0 :
-            a=u*i
-            b=1
-        elif u == 0 :
-            a=p/i
-            b=2
-        elif i == 0 :
-            a=p/u
+        if sec_menu == 1:
+            print("Vous avez choisi la formule P = U x I")
+
+            p=float(input("Donne la valeur P (W) : "))
+            u=float(input("Donne la valeur U (V) : "))
+            i=float(input("Donne la valeur I (A) : "))
+            a=None
+
+            if p == 0 :
+               a=u*i
+               b=1
+            elif u == 0 :
+               a=p/i
+               b=2
+            elif i == 0 :
+               a=p/u
             b=3
 
-        if b == 1 :
-            print("\nRésulat :",a, "W\n")
-        elif b == 2 :
-            print("\nRésulat :",a, "V\n")
-        elif b == 3 :
-            print("\nRésulat :",a, "A\n")
+            if b == 1 :
+               print("\nRésulat :",a, "W\n")
+            elif b == 2 :
+               print("\nRésulat :",a, "V\n")
+            elif b == 3 :
+               print("\nRésulat :",a, "A\n")
 
+        elif sec_menu == 2:
+            print("Vous avez choisi la formule P = I² / R")
+
+            i2=float(input("Donne la valeur I² (A) : "))
+            r=float(input("Donne la valeur R (Ω) : "))
+            p=float(input("Donne la valeur P (W) : "))
+            a=None
+
+            if p == 0 :
+                a=r/i2
+                b=1
+            elif r == 0 :
+                a=p/i2
+                b=2
+            elif i2 == 0 :
+                a=p*r
+                b=3
+
+            if b == 1 :
+                print("\nRésulat :",a, "W\n")
+            elif b == 2 :
+                print("\nRésulat :",a, "Ω\n")
+            elif b == 3 :
+                print("\nRésulat :",a, "A\n")
+
+        elif sec_menu == 3:
+            continue
     elif choix == 3:
         print("Vous avez choisi l'option 3")
     
